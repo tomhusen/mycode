@@ -17,14 +17,14 @@ export default function Home() {
         marginBottom: '30px', 
         textAlign: 'center',
         color: '#0070f3'
-      }}>Next.js Data Fetching Strategies</h1>
+      }}>Advanced SSR and SSG Techniques in Next.js</h1>
       
       <p style={{ 
         fontSize: '1.2rem', 
         marginBottom: '30px', 
         textAlign: 'center'
       }}>
-        Explore various data fetching methods in Next.js. Click on a topic below to learn more.
+        Explore advanced server-side rendering and static site generation techniques. Click on a topic below to learn more.
       </p>
 
       <ul style={{
@@ -35,94 +35,77 @@ export default function Home() {
         <li style={{ 
           marginBottom: '20px' 
         }}>
-          <Link href="/server-side" style={{
+          <Link href="/ssr-example" style={{
             fontSize: '1.5rem',
             color: '#0070f3',
             textDecoration: 'none',
           }}>
-            Server-Side Data Fetching (getServerSideProps)
+            Server-Side Rendering (SSR)
           </Link>
           <p style={{
             fontSize: '1rem',
             color: '#666',
           }}>
-            Learn how to fetch data at request time using server-side rendering.
+            Learn how to fetch and render data at request time on the server.
           </p>
         </li>
 
         <li style={{ 
           marginBottom: '20px' 
         }}>
-          <Link href="/static-props" style={{
+          <Link href="/ssg-example" style={{
             fontSize: '1.5rem',
             color: '#0070f3',
             textDecoration: 'none',
           }}>
-            Static Site Generation (getStaticProps)
+            Static Site Generation (SSG)
           </Link>
           <p style={{
             fontSize: '1rem',
             color: '#666',
           }}>
-            Discover how to fetch data at build time for static pages.
+            Discover how to pre-render pages at build time for better performance.
           </p>
         </li>
 
         <li style={{ 
           marginBottom: '20px' 
         }}>
-          <Link href="/users/[id]" as={`/users/1`} style={{
+          <Link href="/isr-example" style={{
             fontSize: '1.5rem',
             color: '#0070f3',
             textDecoration: 'none',
           }}>
-            Dynamic Routes with getStaticPaths
+            Incremental Static Regeneration (ISR)
           </Link>
           <p style={{
             fontSize: '1rem',
             color: '#666',
           }}>
-            Generate dynamic routes and fetch data for each page at build time.
+            Implement ISR to keep static content up-to-date without rebuilding the entire site.
           </p>
         </li>
 
         <li style={{ 
           marginBottom: '20px' 
         }}>
-          <Link href="/client-side" style={{
+          <Link href="/advanced-ssr" style={{
             fontSize: '1.5rem',
             color: '#0070f3',
             textDecoration: 'none',
           }}>
-            Client-Side Data Fetching
+            Advanced SSR Techniques
           </Link>
           <p style={{
             fontSize: '1rem',
             color: '#666',
           }}>
-            Implement client-side data fetching for real-time updates.
-          </p>
-        </li>
-
-        <li style={{ 
-          marginBottom: '20px' 
-        }}>
-          <Link href="/axios-fetch" style={{
-            fontSize: '1.5rem',
-            color: '#0070f3',
-            textDecoration: 'none',
-          }}>
-            Data Fetching with Axios
-          </Link>
-          <p style={{
-            fontSize: '1rem',
-            color: '#666',
-          }}>
-            Use Axios to manage API calls in a Next.js project.
+            Combine SSR with client-side fetching for dynamic and interactive pages.
           </p>
         </li>
       </ul>
     </div>
   );
 }
+
 
