@@ -1,0 +1,15 @@
+{
+  "name": "turbo-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "turbo": "turbo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "turbo": "^2.1.1"
+  }
+}
